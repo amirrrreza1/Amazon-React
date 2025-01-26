@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0;
+    box-sizing: border-box;
+    font-family: "Ember", sans-serif;
+  }
+  body {
+    scroll-behavior: smooth;
+    background-color: #e2e6e6;
+  }
+  .flexDisplay {
+    @apply flex justify-center items-center;
+  }
+  .HeaderBorder:hover {
+    border: 1px solid white;
+  }
+  .GradiantSlider {
+    mask-image: linear-gradient(to bottom, white, white, transparent);
+  }
+  .zIndex {
+    z-index: 100 !important;
+  }
+  .FooterItem {
+    @apply text-[12px] leading-7 text-[#DEDDD2] cursor-pointer hover:underline;
+  }
+  .FooterBorder {
+    @apply flexDisplay p-1 border-gray-500 border-[1px] rounded-sm text-[14px];
+  }
+}
+
+@font-face {
+  font-family: "Ember";
+  src: url("../public/Font/Ember/AmazonEmber_Rg.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Ember";
+  src: url("../public/Font/Ember/AmazonEmber_Bd.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Ember";
+  src: url("../public/Font/Ember/AmazonEmber_Lt.ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Ember";
+  src: url("../public/Font/Ember/AmazonEmber_Md.ttf");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Ember";
+  src: url("../public/Font/Ember/AmazonEmber_Th.ttf");
+  font-weight: 300;
+}
+body {
+  overflow-x: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

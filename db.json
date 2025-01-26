@@ -1,0 +1,487 @@
+{
+  "Slider": [
+    {
+      "id": 1,
+      "src": "./Images/Slider/SliderIMG-1.png"
+    },
+    {
+      "id": 2,
+      "src": "./Images/Slider/SliderIMG-2.png"
+    },
+    {
+      "id": 3,
+      "src": "./Images/Slider/SliderIMG-3.png"
+    },
+    {
+      "id": 4,
+      "src": "./Images/Slider/SliderIMG-4.png"
+    },
+    {
+      "id": 5,
+      "src": "./Images/Slider/SliderIMG-5.png"
+    },
+    {
+      "id": 6,
+      "src": "./Images/Slider/SliderIMG-6.png"
+    },
+    {
+      "id": 7,
+      "src": "./Images/Slider/SliderIMG-7.png"
+    }
+  ],
+  "SlideBar": [
+    {
+      "id": 8,
+      "text": "Medical Care",
+      "dropdown": []
+    },
+    {
+      "id": 9,
+      "text": "Best Sellers",
+      "dropdown": []
+    },
+    {
+      "id": 10,
+      "text": "Prime",
+      "dropdown": []
+    },
+    {
+      "id": 11,
+      "text": "Amazon Basics",
+      "dropdown": []
+    },
+    {
+      "id": 12,
+      "text": "Music",
+      "dropdown": []
+    },
+    {
+      "id": 13,
+      "text": "New Releases",
+      "dropdown": []
+    },
+    {
+      "id": 14,
+      "text": "Todays Deals",
+      "dropdown": []
+    },
+    {
+      "id": 15,
+      "text": "Groceries",
+      "dropdown": []
+    },
+    {
+      "id": 16,
+      "text": "Customer Service",
+      "dropdown": []
+    },
+    {
+      "id": 17,
+      "text": "Amazon Home",
+      "dropdown": []
+    },
+    {
+      "id": 18,
+      "text": "Registry",
+      "dropdown": []
+    },
+    {
+      "id": 19,
+      "text": "Pharmacy",
+      "dropdown": []
+    },
+    {
+      "id": 20,
+      "text": "Gift Cards",
+      "dropdown": []
+    },
+    {
+      "id": 21,
+      "text": "Smart Home",
+      "dropdown": []
+    },
+    {
+      "id": 22,
+      "text": "Books",
+      "dropdown": []
+    }
+  ],
+  "MainItems": [
+    {
+      "id": 23,
+      "title": "Winter getaway",
+      "img1": "./Images/MainItems/Handbags.png",
+      "text1": "Handbags",
+      "img2": "./Images/MainItems/Boots.png",
+      "text2": "Boots",
+      "img3": "./Images/MainItems/Apparel.png",
+      "text3": "Apparel",
+      "img4": "./Images/MainItems/Skincare.png",
+      "text4": "Skincare",
+      "link": "Shop Luxury Stores",
+      "Special": []
+    },
+    {
+      "id": 24,
+      "title": "Enjoy All the prime benefits",
+      "img1": "./Images/MainItems/Essentials.png",
+      "text1": "Save 15% on essentials",
+      "img2": "./Images/MainItems/PopularMovies.png",
+      "text2": "Popular movies and Shows",
+      "img3": "./Images/MainItems/GrubhubDelivery.png",
+      "text3": "0$ Grubhub delivery fees",
+      "img4": "./Images/MainItems/FastShipping.png",
+      "text4": "Fast Shipping",
+      "link": "Join Prime",
+      "Special": []
+    },
+    {
+      "id": 25,
+      "title": "Shop 450+ gift card brand",
+      "link": "Shop all gift cards",
+      "Special": [
+        {
+          "src": "./Images/MainItems/GiftCard.png"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Winter getaway",
+      "img1": "./Images/MainItems/Handbags.png",
+      "text1": "Handbags",
+      "img2": "./Images/MainItems/Boots.png",
+      "text2": "Boots",
+      "img3": "./Images/MainItems/Apparel.png",
+      "text3": "Apparel",
+      "img4": "./Images/MainItems/Skincare.png",
+      "text4": "Skincare",
+      "link": "Shop Luxury Stores",
+      "Special": []
+    },
+    {
+      "id": 27,
+      "title": "Shop 450+ gift card brand",
+      "link": "Shop all gift cards",
+      "Special": [
+        {
+          "src": "./Images/MainItems/BeautyOnShop.png"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Gift ideas, picked for you",
+      "img1": "./Images/MainItems/CustomerLove.png",
+      "text1": "Customer Loved",
+      "img2": "./Images/MainItems/Deals.png",
+      "text2": "Deals",
+      "img3": "./Images/MainItems/OurTop.png",
+      "text3": "Our Top 100+",
+      "img4": "./Images/MainItems/Under100.png",
+      "text4": "Under 100$",
+      "link": "Shop Valentines Day",
+      "Special": []
+    },
+    {
+      "id": 29,
+      "title": "Find gifts they love",
+      "img1": "./Images/MainItems/Under10.png",
+      "text1": "Under 10$",
+      "img2": "./Images/MainItems/Under20.png",
+      "text2": "Under 20$",
+      "img3": "./Images/MainItems/Under50.png",
+      "text3": "Under 50%",
+      "img4": "./Images/MainItems/Deals2.png",
+      "text4": "Deals",
+      "link": "Shop Valentines Day",
+      "Special": []
+    },
+    {
+      "id": 30,
+      "title": "Sweet gifts for Everyone",
+      "img1": "./Images/MainItems/ForHer.png",
+      "text1": "For her",
+      "img2": "./Images/MainItems/ForHim.png",
+      "text2": "For him",
+      "img3": "./Images/MainItems/ForKids.png",
+      "text3": "For Kids",
+      "img4": "./Images/MainItems/ForTeens.png",
+      "text4": "For Teens",
+      "link": "Shop Valentines Day",
+      "Special": []
+    },
+    {
+      "id": 31,
+      "title": "New year, new self-care",
+      "img1": "./Images/MainItems/Beauty.png",
+      "text1": "Beauty",
+      "img2": "./Images/MainItems/Books.png",
+      "text2": "BOoks",
+      "img3": "./Images/MainItems/Sport.png",
+      "text3": "Sport & Fitness",
+      "img4": "./Images/MainItems/AllCare.png",
+      "text4": "All Self-Care",
+      "link": "Shop more for 2025",
+      "Special": []
+    },
+    {
+      "id": 32,
+      "title": "New year upgrades",
+      "img1": "./Images/MainItems/ActiveWear.png",
+      "text1": "Active Wear",
+      "img2": "./Images/MainItems/Storage.png",
+      "text2": "Storage & Organization",
+      "img3": "./Images/MainItems/HomeUpdate.png",
+      "text3": "Home Updates",
+      "img4": "./Images/MainItems/Health.png",
+      "text4": "Health",
+      "link": "Shop more for 2025",
+      "Special": []
+    },
+    {
+      "id": 33,
+      "title": "Fresh buys for 2025",
+      "img1": "./Images/MainItems/CustomeMostLoved.png",
+      "text1": "Customer most-loved",
+      "img2": "./Images/MainItems/Deals3.png",
+      "text2": "Deals",
+      "img3": "./Images/MainItems/HeathUnder10.png",
+      "text3": "Health finds under 10$",
+      "img4": "./Images/MainItems/Top100.png",
+      "text4": "Top 100",
+      "link": "Shop Valentines Day",
+      "Special": []
+    },
+    {
+      "id": 34,
+      "title": "Ski chic",
+      "link": "See more from Shopbop",
+      "Special": [
+        {
+          "src": "./Images/MainItems/SkiChic.png"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Outwear edit",
+      "link": "See more from Shopbop",
+      "Special": [
+        {
+          "src": "./Images/MainItems/OutWearEdit.png"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Grab a gift they`ll love",
+      "link": "Send a Visa Gift Card",
+      "Special": [
+        {
+          "src": "./Images/MainItems/GiftCard3.png"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Gaming Corber",
+      "link": "For all your gaming needs",
+      "Special": [
+        {
+          "src": "./Images/MainItems/Gaming.png"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Get your Game on",
+      "link": "Shop Gaming",
+      "Special": [
+        {
+          "src": "./Images/MainItems/GameOn.png"
+        }
+      ]
+    }
+  ],
+  "FooterItems": [
+    {
+      "id": 39,
+      "title": "Get to Know Us",
+      "text1": "Careers",
+      "text2": "Blog",
+      "text3": "About Amazon",
+      "text4": "Investor Relations",
+      "text5": "Amazon Devices",
+      "text6": "Amazon Science"
+    },
+    {
+      "id": 40,
+      "title": "Make Money with Us",
+      "text1": "Sell products on Amazon",
+      "text2": "Sell on Amazon Business",
+      "text3": "Sell apps on Amazon",
+      "text4": "Become an Affiliate",
+      "text5": "Advertise Your Products",
+      "text6": "Self-Publish with Us",
+      "text7": "Host an Amazon Hub",
+      "text8": "›  See More Make Money with Us"
+    },
+    {
+      "id": 41,
+      "title": "Amazon Payment Products", 
+      "text1": "Amazon Business Card",
+      "text2": "Shop with Points",
+      "text3": "Reload Your Balance",
+      "text4": "Amazon Currency Converter"
+    },
+    {
+      "id": 42,
+      "title": "Let Us Help You",
+      "text1": "Amazon and COVID-19",
+      "text2": "Your Account",
+      "text3": "Your Orders",
+      "text4": "Shipping Rates & Policies",
+      "text6": "Returns & Replacements",
+      "text7": "Manage Your Content and Devices",
+      "text9": "Help"
+    }
+  ],
+  "AmazonFooterItems":[
+    {
+      "id": 43,
+      "title": "Amazon Music",
+      "text": "Stream millions"
+    },
+    {
+      "id": 44,
+      "title": "Amazon Ads",
+      "text": "Reach customers wherever they spend their time"
+    },
+    {
+      "id":45,
+      "title": "6pm",
+      "text": "Score deals on fashion brands"
+    },
+    {
+      "id": 46,
+      "title": "AbeBooks",
+      "text": "Books, art & collectibles"
+    },
+    {
+      "id": 47,
+      "title": "ACX",
+      "text": "Audiobook Publishing Made Easy"
+    },
+    {
+      "id": 48,
+      "title": "Sell on Amazon",
+      "text": "Start a Selling Account"
+    },
+    {
+      "id":49,
+      "title": "Veeqo",
+      "text": "Shipping software inventory and Management"
+    },
+    {
+      "id": 50,
+      "title": "Amazon Business",
+      "text": "Everything For Your Business"
+    },
+    {
+      "id": 51,
+      "title": "AmazonGlobal",
+      "text": "Ship Orders Internationally"
+    },
+    {
+      "id": 52,
+      "title": "Home Services",
+      "text": "Experienced Pros Happiness Guarantee"
+    },
+    {
+      "id": 53,
+      "title": "Amazon Web Services",
+      "text": "Scalable Cloud Computing Services"
+    },
+    {
+      "id": 55,
+      "title": "Audible",
+      "text": "Listen to Books & Original Audio Performances"
+    },
+    {
+      "id": 56,
+      "title": "Box Office Mojo",
+      "text": "Find Movie Box Office Data"
+    },
+    {
+      "id": 57,
+      "title": "Goodreads",
+      "text": "Book reviews & recommendations"
+    },
+    {
+      "id": 58,
+      "title": "IMDB",
+      "text": "Movies, TV & Celebrities"
+    },
+    {
+      "id": 59,
+      "title": "IMDBPro",
+      "text": "Get Info Entertainment Professionals Need"
+    },
+    {
+      "id": 60,
+      "title": "Kindle Direct Publishing",
+      "text": "Indie Digital & Print Publishing Made Easy"
+    },
+    {
+      "id":61,
+      "title": "Prime Video Direct",
+      "text": "Video Distribution Made Easy"
+    },
+    {
+      "id": 62,
+      "title": "Shopbop",
+      "text": "Designer Fashion Brands"
+    },
+    {
+      "id": 63,
+      "title": "Woot!",
+      "text": "Deals and Shenanigans"
+    },
+    {
+      "id": 64,
+      "title": "Zappos",
+      "text": "Shoes & Clothing"
+    },
+    {
+      "id": 65,
+      "title": "Ring",
+      "text": "Smart Home Security Systems"
+    },
+    {
+      "id": 66,
+      "title": "eero WiFi",
+      "text": "Stream 4K Video in Every Room"
+    },
+    {
+      "id": 67,
+      "title": "Blink",
+      "text": "Smart Security for Every Home"
+    },
+    {
+      "id": 68,
+      "title": "Neighbors App",
+      "text": "Real-Time Crime & Safety Alerts"
+    },
+    {
+      "id": 69,
+      "title": "Amazon Subscription Boxes",
+      "text": "Top subscription boxes – right to your door"
+    },
+    {
+      "id": 70,
+      "title": "PillPack",
+      "text": "Pharmacy Simplified"
+    }
+  ]
+}
