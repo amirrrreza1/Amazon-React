@@ -15,20 +15,40 @@
   .flexDisplay {
     @apply flex justify-center items-center;
   }
-  .HeaderBorder:hover {
-    border: 1px solid white;
+  .HeaderBorder {
+    border: 1px solid transparent;
+    margin: 10px;
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+  .SlideBarBorder {
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+  .zindex {
+    z-index: 10 !important;
+  }
+  .SearchBarBorder {
+    border: 4px solid transparent;
+    box-sizing: content-box;
+    &:focus-within {
+      border: 4px solid orange;
+    }
   }
   .GradiantSlider {
     mask-image: linear-gradient(to bottom, white, white, transparent);
   }
   .zIndex {
-    z-index: 100 !important;
+    z-index: 1000 !important;
   }
   .FooterItem {
     @apply text-[12px] leading-7 text-[#DEDDD2] cursor-pointer hover:underline;
   }
   .FooterBorder {
-    @apply flexDisplay p-1 border-gray-500 border-[1px] rounded-sm text-[14px];
+    @apply flexDisplay p-2 cursor-pointer border-gray-500 border-[1px] rounded-sm text-[14px];
   }
 }
 

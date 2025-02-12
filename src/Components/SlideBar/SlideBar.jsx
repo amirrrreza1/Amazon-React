@@ -1,77 +1,61 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-function SlidableNavbar({ SlideBarData }) {
-  const navbarRef = useRef(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    setStartX(e.pageX - (navbarRef.current?.offsetLeft || 0));
-    setScrollLeft(navbarRef.current?.scrollLeft || 0);
-  };
+import "./SlideBar.css";
 
-  const handleMouseMove = (e) => {
-    if (!isDragging || !navbarRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - navbarRef.current.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust scroll speed
-    navbarRef.current.scrollLeft = scrollLeft - walk;
-  };
+import { FreeMode } from "swiper/modules";
 
-  const handleMouseUpOrLeave = () => {
-    setIsDragging(false);
-  };
-
-  const handleTouchStart = (e) => {
-    setIsDragging(true);
-    setStartX(e.touches[0].pageX - (navbarRef.current?.offsetLeft || 0));
-    setScrollLeft(navbarRef.current?.scrollLeft || 0);
-  };
-
-  const handleTouchMove = (e) => {
-    if (!isDragging || !navbarRef.current) return;
-    e.preventDefault();
-    const x = e.touches[0].pageX - navbarRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    navbarRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-  };
-
+export default function SlidableNavbar({ SlideBarData }) {
   return (
-    <div
-      ref={navbarRef}
-      className="no-scrollbar bg-secondColor  flexDisplay  text-white h-[40px] mt-[60px] leading-[40px] overflow-y-hidden touch-none"
-      style={{ cursor: isDragging ? "grabbing" : "grab" }}
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUpOrLeave}
-      onMouseLeave={handleMouseUpOrLeave}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
-      <a
-        href="#"
-        className="hover:border-white hover:border-[1px] !cursor-pointer flexDisplay gap-1"
-      >
-        <img src="./Images/SVG/Menu.svg" alt="Menu" width="22" />
-        Menu
-      </a>
-      {SlideBarData?.map((item, index) => (
-        <div
-          key={index}
-          className="px-3 flex-shrink-0 text-white text-[14px] hover:border-white hover:border-[1px] !cursor-pointer"
+    <>
+      <div className="w-full h-[40px] bg-secondColor text-white">
+        <Swiper
+          breakpoints={{
+            300: {
+              slidesPerView: 3.7,
+            },
+            400: {
+              slidesPerView: 5,
+            },
+            600: {
+              slidesPerView: 7.5,
+            },
+            800: {
+              slidesPerView: 10,
+            },
+            1000: {
+              slidesPerView: 12,
+            },
+            1300: {
+              slidesPerView: 20,
+            },
+          }}
+          spaceBetween={0}
+          freeMode={true}
+          modules={[FreeMode]}
+          className="mySwiper"
         >
-          {item.text}
-        </div>
-      ))}
-    </div>
+          <SwiperSlide className="!w-fit hidden lg:flex text-[14px] h-full mx-2 bg-transparent SlideBarBorder cursor-pointer gap-2">
+            <img src="./Images/SVG/Menu.svg" alt="MenuIcon" className="!w-[20px] !h-[25px]"/>
+            All
+          </SwiperSlide>
+          {SlideBarData?.map((item) => {
+            return (
+              <SwiperSlide
+                className="!w-fit text-[14px] h-full mx-2 bg-transparent SlideBarBorder cursor-pointer"
+                key={item.id}
+              >
+                {item.text}
+              </SwiperSlide>
+            );
+          })}
+          <SwiperSlide className="bg-transparent"></SwiperSlide>;
+        </Swiper>
+      </div>
+    </>
   );
 }
-
-export default SlidableNavbar;

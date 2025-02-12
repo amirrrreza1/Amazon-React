@@ -104,7 +104,7 @@ const App = () => {
       <div className="relative">
         <SlideBar SlideBarData={SlideBarData} />
 
-        <div className="relative">
+        <div className="relative -mb-[19vw]">
           <Slider sliderData={SliderData} />
         </div>
 

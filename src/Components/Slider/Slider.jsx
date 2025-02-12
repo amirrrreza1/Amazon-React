@@ -18,9 +18,14 @@ const Slider = ({ sliderData }) => {
       >
         {sliderData?.map((item) => (
           <SwiperSlide key={item.id}>
-            <img src={item.src} alt={`Slide ${item.id}`} className="GradiantSlider" />
+            <img
+              src={item.src}
+              alt={`Slide ${item.id}`}
+              className="GradiantSlider"
+            />
           </SwiperSlide>
         )) || <p className="placeholder">Loading slides...</p>}
+
       </Swiper>
     </div>
   );
