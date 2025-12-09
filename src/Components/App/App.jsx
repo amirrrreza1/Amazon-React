@@ -1,14 +1,14 @@
-import React, { useEffect, useState, createContext } from "react";
+import { useEffect, useState, createContext } from "react";
 import Header from "../Header/Header";
 import Slider from "../Slider/Slider";
 import Footer from "../Footer/Footer";
 import SlideBar from "../SlideBar/SlideBar";
-import dataFetcher from "../../JS/DataFetcher";
 import MainItems from "../MainItems/MainItems";
 import SignIn from "../SignIn/SignIn";
 import BackToTop from "../BackToTop/BackToTop";
 import AmazonFooterItems from "../AmazonFooterItems/AmazonFooterItems";
-import axios from "axios";
+import data from "../../../db.json";
+
 export const MyContext = createContext();
 
 const App = () => {
@@ -19,67 +19,23 @@ const App = () => {
   const [AmazonFooterItemsData, SetAmazonFooterItemsData] = useState(null);
 
   const fetchSlider = async () => {
-    try {
-      let res = await axios.get(
-        "https://amirrrreza1.github.io/Amazon-React-Link/db.json"
-      );
-      SetSliderData(res.data.Slider);
-    } catch (error) {
-      console.error("Failed to fetch slider data:", error.message);
-    }
+    SetSliderData(data.Slider);
   };
 
   const fetchSlideBar = async () => {
-    try {
-      let res = await axios.get(
-        "https://amirrrreza1.github.io/Amazon-React-Link/db.json"
-      );
-      SetSlideBarData(res.data.SlideBar);
-
-      // const Slides = await dataFetcher("/SlideBar");
-      // SetSlideBarData(Slides);
-    } catch (error) {
-      console.error("Failed to fetch SlideBar data:", error.message);
-    }
+    SetSlideBarData(data.SlideBar);
   };
 
   const fetchMainItems = async () => {
-    try {
-      let res = await axios.get(
-        "https://amirrrreza1.github.io/Amazon-React-Link/db.json"
-      );
-      SetMainItemsData(res.data.MainItems);
-      // const items = await dataFetcher("/MainItems");
-      // SetMainItemsData(items);
-    } catch (error) {
-      console.error("Failed to fetch MainItems data:", error.message);
-    }
+    SetMainItemsData(data.MainItems);
   };
 
   const fetchFooterItems = async () => {
-    let res = await axios.get(
-      "https://amirrrreza1.github.io/Amazon-React-Link/db.json"
-    );
-    SetFooterItemsData(res.data.FooterItems);
-    try {
-      // const items = await dataFetcher("/FooterItems");
-      // SetFooterItemsData(items);
-    } catch (error) {
-      console.error("Failed to fetch FooterItems data:", error.message);
-    }
+    SetFooterItemsData(data.FooterItems);
   };
 
   const fetchAmazonFooterItems = async () => {
-    try {
-      let res = await axios.get(
-        "https://amirrrreza1.github.io/Amazon-React-Link/db.json"
-      );
-      SetAmazonFooterItemsData(res.data.AmazonFooterItems);
-      // const items = await dataFetcher("/AmazonFooterItems");
-      // SetAmazonFooterItemsData(items);
-    } catch (error) {
-      console.error("Failed to fetch AmazonFooterItems data:", error.message);
-    }
+    SetAmazonFooterItemsData(data.AmazonFooterItems);
   };
 
   useEffect(() => {

@@ -39,7 +39,7 @@
     }
   }
   .GradiantSlider {
-    mask-image: linear-gradient(to bottom, white, white, transparent);
+    mask-image: linear-gradient(to bottom, #e2e6e6, transparent);
   }
   .zIndex {
     z-index: 1000 !important;
